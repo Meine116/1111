@@ -1,0 +1,25 @@
+var p;
+
+
+function setup() {
+  createCanvas(400, 400);
+  p = new Pelota();
+}
+
+function draw() {
+  background(220);
+  p.mostrar();
+}
+class Pelota{
+ constructor(){
+   this.x = 200;
+   this.y = 200;
+   this.tam = 50;
+   
+}
+  mostrar(){
+   ellipse(this.x,this.y,this.tam,this.tam);
+    
+  }
+  
+}
